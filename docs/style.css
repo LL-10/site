@@ -3,7 +3,7 @@
 	height: 100dvh;
 	font-size: calc(40vw / 9);
 	font-family: Helvetica, sans-serif;
-	color: black;
+	color: #000;
 }
 
 @media screen and (max-width: 315px) {
