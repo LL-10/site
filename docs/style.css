@@ -1,0 +1,50 @@
+:root {
+	width: 100dvw;
+	height: 100dvh;
+	font-size: calc(40vw / 9);
+	font-family: Helvetica, sans-serif;
+	color: black;
+}
+
+@media screen and (max-width: 315px) {
+	:root {
+		font-size: 14px;
+	}
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+header {
+	padding: 0.4em;
+	border-bottom: 0.2rem solid;
+	background: #ccf;
+}
+
+main {
+	padding: 0.6em 1em;
+	flex: 1;
+	overflow-y: auto;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+footer {
+	padding: 0.4em;
+	border-top: 0.2rem solid;
+	background: #ccf;
+}
+
+@media print {
+	:root {
+		font-family: Century, serif;
+	}
+}
