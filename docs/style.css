@@ -1,6 +1,6 @@
 :root {
 	width: 100dvw;
-	height: 100dvh;
+	height: 100%;
 	display: flex;
 	font-size: calc(40vw / 9);
 	font-family: Helvetica, sans-serif;
