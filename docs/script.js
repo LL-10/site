@@ -1,4 +1,4 @@
-/*const installButton = document.getElementById('install');
+const installButton = document.getElementById('install');
 const openButton = document.getElementById('open');
 
 window.addEventListener('beforeinstallprompt', async (event) => {
@@ -20,4 +20,3 @@ window.addEventListener('appinstalled', () => {
 	installButton.prompt = null;
 	installButton.setAttribute('hidden', '');
 });
-*/
