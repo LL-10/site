@@ -1,5 +1,6 @@
 const installButton = document.getElementById('install');
 const openButton = document.getElementById('open');
+console.log(navigator.getInstalledRelatedApps());
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	const relatedApps = await navigator.getInstalledRelatedApps();
