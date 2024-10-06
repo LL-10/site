@@ -3,6 +3,7 @@ const openButton = document.getElementById('open');
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	const relatedApps = await navigator.getInstalledRelatedApps();
+	document.body.innerHTML = relatedApps;
 	if(relatedApps.find((app) => app.id === 'll-10.github.io/site')) {
 		openButton.removeAttribute('hidden');
 		return;
