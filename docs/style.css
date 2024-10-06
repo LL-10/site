@@ -1,7 +1,6 @@
 :root {
 	width: 100dvw;
 	height: 100dvh;
-	display: flex;
 	font-size: calc(40vw / 9);
 	font-family: Helvetica, sans-serif;
 	color: #000;
@@ -14,9 +13,9 @@
 }
 
 body {
+	height: inherit;
 	margin: 0;
 	padding: 0;
-	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
