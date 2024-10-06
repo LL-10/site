@@ -5,8 +5,8 @@
 			"src": "favicon.svg"
 		}
 	],
-	"id": "/",
-	"start_url": "/",
+	"id": ".",
+	"start_url": ".",
 	"background_color": "white",
 	"display": "fullscreen",
 	"theme_color": "black",
