@@ -1,10 +1,12 @@
 const installButton = document.getElementById('install');
 const openButton = document.getElementById('open');
-console.log(navigator.getInstalledRelatedApps());
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	const relatedApps = await navigator.getInstalledRelatedApps();
-	document.body.innerHTML = relatedApps;
+	if(relatedApps.find((app) => app.id === 'll-10.github.io/site')) {
+		openButton.removeAttribute('hidden');
+		return;
+	}
 	event.preventDefault();
 	installButton.prompt = event;
 	installButton.removeAttribute('hidden');
