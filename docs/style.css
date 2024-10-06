@@ -1,6 +1,6 @@
 :root {
 	width: 100dvw;
-	height: 100%;
+	height: 100dvh;
 	display: flex;
 	font-size: calc(40vw / 9);
 	font-family: Helvetica, sans-serif;
@@ -14,12 +14,13 @@
 }
 
 body {
-	flex: 1;
 	margin: 0;
 	padding: 0;
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: stretch;
 	overflow: hidden;
 }
 
